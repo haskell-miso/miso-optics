@@ -31,7 +31,7 @@ import           Optics
 ----------------------------------------------------------------------------
 -- | Bidirectional t'Binding'
 (<--->) :: (Is k1 A_Lens, Is k2 A_Lens) => Optic' k1 is1 parent a -> Optic' k2 is2 model a -> Binding parent model
-l1 <---> l2 = Miso.Lens.fromVL (toLensVL l1) B.<--> Miso.Lens.fromVL (toLensVL l2)
+l1 <---> l2 = fromVL (toLensVL l1) B.<--> fromVL (toLensVL l2)
 ----------------------------------------------------------------------------
 -- | Unidirectional `ParentToChild` t'Binding'
 (--->) :: (Is k1 A_Getter, Is k2 A_Setter) => Optic' k1 is1 parent a -> Optic' k2 is2 model a -> Binding parent model
