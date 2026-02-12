@@ -8,7 +8,7 @@ Created by [@georgefst](https://github.com/georgefst).
 ### Usage
 
 ```haskell
-import Miso.Optics ((<-->), (<--), (-->))
+import Miso.Optics ((<--->), (<---), (--->))
 ```
 
 ## Build
