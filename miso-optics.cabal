@@ -16,6 +16,10 @@ extra-doc-files:    CHANGELOG.md
 common warnings
   ghc-options: -Wall
 
+source-repository head
+  type: git
+  location: https://github.com/haskell-miso/miso-optics.git
+
 library
   import:
     warnings
